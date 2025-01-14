@@ -5,7 +5,7 @@ const ageInputEl = document.getElementById("age-input");
 const submissionBtn = document.getElementById("submission-btn");
 const getResponse = document.getElementById("response");
 // create a mutable variable called age and do not assign it a value.
-let age <= 18;
+let age;
 
 
 function checkAgeAndRespond() {
