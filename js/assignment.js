@@ -12,13 +12,15 @@ function checkAgeAndRespond() {
   age = parseInt(ageInputEl.value);
 
   // Write your code below
-  if (age <= 18) {
-    console.log("You cannot vote and you cannot purchase alcohol.");
-  } else if (ageInputEl.value >= 18 && ageInputEl.value <= 21) {
-    console.log("You can vote but you cannot purchase alcohol.");
-  } else;
-  {
-    console.log("You can vote and purchase alchol.");
+  if (age < 18) {
+    getResponse.innerHTML = "You cannot vote and you cannot purchase alcohol.";
+    // console.log("You cannot vote and you cannot purchase alcohol.");
+  } else if (ageInputEl.value >= 18 && ageInputEl.value < 21) {
+    getResponse.innerHTML = "You can vote but you cannot purchase alcohol.";
+    //console.log("You can vote but you cannot purchase alcohol.");
+  } else if (ageInputEl.value >= 21) {
+    getResponse.innerHTML = "You can vote and purchase alcohol.";
+    //console.log("You can vote and purchase alchol.");
   }
 }
 
